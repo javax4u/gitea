@@ -1,4 +1,15 @@
 #!/bin/sh
+sudo mysql
+CREATE USER 'gitea'@'localhost' IDENTIFIED BY 'gitea';                                                                                                                                                                                                
+GRANT ALL PRIVILEGES ON * . * TO 'gitea'@'localhost';                                                                                                                                                                                                
+FLUSH PRIVILEGES;                                                                                                                                                                                               
+SHOW GRANTS FOR 'gitea'@'localhost';                                                                                                                                                                                                                                                                                                                                                                                             
+EXIT
+mysql -u gitea -pgitea
+CREATE DATABASE gitea;
+EXIT
+
+
 adduser \
    --system \
    --shell /bin/bash \
@@ -7,7 +18,7 @@ adduser \
    --disabled-password \
    --home /home/git \
    git
-cd /home/git
+#cd /home/git
 #download gitea binary
 wget -O gitea https://dl.gitea.io/gitea/1.12.1/gitea-1.12.1-linux-amd64
 #make it executable
