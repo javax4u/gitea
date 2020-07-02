@@ -1,5 +1,5 @@
 #!/bin/sh
-
+ mysql < "mysql.sql"
 adduser \
    --system \
    --shell /bin/bash \
