@@ -8,4 +8,8 @@ cd gitea-master
 chmod +x *.sh  
 sh install-gitea.sh  
 
-[video manual is here](https://github.com/javax4u/gitea/archive/master.zip)
+[video manual is here](https://github.com/javax4u/gitea/archive/master.zip)  
+## Architecture   
+![component-plan](component-plan.png)  
+
+
