@@ -11,5 +11,8 @@ sh install-gitea.sh
 [video manual is here](https://github.com/javax4u/gitea/archive/master.zip)  
 ## Architecture   
 ![component-plan](component-plan.png)  
+![log-directory](log-directory.png)  
+![configuration-file](configuration-file.png)  
+
 
 
